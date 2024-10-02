@@ -147,11 +147,11 @@ const Chattings = () => {
                 <div className='py-4 bg-[#F9F9F9] px-6'>
                     <div className='flex items-center gap-x-2'>
                         <div className='w-12 h-12 rounded-full overflow-hidden'>
-                            <img src={singleFriend.profile || AvatarImage} alt="User Avatar" className='w-full h-full object-cover' />
+                            <img src={singleFriend?.profile || AvatarImage} alt="User Avatar" className='w-full h-full object-cover' />
                         </div>
                         <div>
                             <span className='font-fontInterRegular text-black'>
-                                {singleFriend.name || "please select friend for chatting"}
+                                {singleFriend?.name || "please select friend for chatting"}
                             </span>
                         </div>
                     </div>
